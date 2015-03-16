@@ -1,0 +1,56 @@
+// Place all the styles related to the static controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// http://blog.teamtreehouse.com/a-better-clearfix-with-sass
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+body {
+  margin: 0;
+
+  h1 {
+    margin: 10px;
+  }
+
+  p {
+    margin: 10px;
+  }
+
+  img {
+    margin: 10px;
+  }
+}
+
+img {
+  width: 33%;
+}
+
+ul {
+  margin: 0;
+  width: 100%;
+  background-color: #889999;
+  list-style-type: none;
+
+  li {
+    a {
+      color: #000000;
+
+      &:hover {
+        color: #005500;
+      }
+    }
+
+    float: left;
+    font-size: 3em;
+    width: 33%;
+    text-align: center;
+  }
+
+  @include clearfix;
+}

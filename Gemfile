@@ -52,3 +52,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :jruby]
 
 gem 'cat_api', '~> 0.1.0'
+
+gem 'geocoder'
